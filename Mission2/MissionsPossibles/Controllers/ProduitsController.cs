@@ -24,7 +24,7 @@ namespace Mission.Controllers
         public async Task<IActionResult> Index()
         {
             // COMPLÉTER ICI
-            return View();
+            return View(_context.produits);
         }
 
     }

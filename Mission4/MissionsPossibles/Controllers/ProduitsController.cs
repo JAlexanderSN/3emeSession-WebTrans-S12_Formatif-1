@@ -50,7 +50,7 @@ namespace Mission.Controllers
         public IActionResult Create()
         {
          
-            return View();
+            return View(new Produit_VM() { Produit = new Produit(), CategorieList = new SelectList(_context.Categories, "Id", "Titre") });
         }
 
         // POST: Produits/Create
